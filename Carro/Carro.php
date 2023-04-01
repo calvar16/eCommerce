@@ -1,3 +1,9 @@
+<?php
+    include('../config/config.php');
+    include('../config/Database.php');
+    //include('../Productos/menuProducto.php');
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,35 +15,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- Enlazamos a nuestra hoja de estilos personalizada -->
-  <link rel="stylesheet" href="./css/carro.css">
+  <link rel="stylesheet" href="./cssCarro/carro.css">
   <title>Productos e-Commerce</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <!-- El logotipo va en la sección navbar-brand y redirige a la página principal tiene estilos css ajustados-->
-          <a class="navbar-brand" href="./index.html"><img src="./imagenesCarro/logo.png" alt="Logo E-commerce" class="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./Registro.html">Registro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="./index.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./Carro.html">Carro de Compras</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page">Pagos</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<?php include('../Productos/menuProducto.php'); ?>
     <div class="container-principal">
         <div class="container-title">
             <div>
@@ -60,5 +42,8 @@
             </button>
         </div>
     </div>
+    <?php include('../Productos/footer.php'); ?>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

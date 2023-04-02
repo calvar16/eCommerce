@@ -1,8 +1,6 @@
 <?php
     include('../config/config.php');
     include('../config/Database.php');
-    //include('../Productos/menuProducto.php');
-    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +17,8 @@
   <title>Productos e-Commerce</title>
 </head>
 <body>
+    <!-- Barra de Navegación con logotipo incluido -->
+
 <?php include('../Productos/menuProducto.php'); ?>
     <div class="container-principal">
         <div class="container-title">
@@ -42,7 +42,9 @@
             </button>
         </div>
     </div>
+    <!-- Footer -->
     <?php include('../Productos/footer.php'); ?>
+<!-- Se enlaza con javascript de bootstrap -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

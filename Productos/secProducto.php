@@ -95,19 +95,8 @@ function muestraDetalle($opcion){
     </div>
     <br>
 
-<<<<<<< HEAD
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row" data-bs-theme="dark">
-                <p>Todos los derechos revervados.</p>
-            </div>
-        </div>
-    </footer>
-=======
 <!-- Footer -->
 <?php include('../Productos/footer.php'); ?>
->>>>>>> main
 
     <script type="text/javascript">
         function verIndex() {

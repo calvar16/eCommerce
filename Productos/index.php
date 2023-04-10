@@ -20,8 +20,13 @@
     <title>Lista de Secciones e-Commerce</title>
 </head>
 <body>
+    <!-- Adicionamos el menú de productos -->
     <?php include('../Productos/menuProducto.php'); ?>
-     <!-- Creamos un contenedor que llevará las secciones -->
+     <!-- Adicionamos el banner de productos -->
+
+     <?php include('../Productos/banner.php'); ?>
+
+<!-- Contenedor principal de productos por sección -->
     <div class="container">
         <br>
         <h2 class="text-center mb-5">Lista de Productos por Sección</h2>
@@ -65,10 +70,17 @@
                 ?>
             <!-- $allSecciones = $s->getAllSecciones(); -->
             <br>
+         <!-- Adicionamos Tabs de especificaciones de entrega de productos -->
 
+         <?php include('../Productos/tabs.php'); ?>
             
     </div>
     <br>
+<<<<<<< HEAD
+
+    <br>
+=======
+>>>>>>> main
      <!-- Footer -->
      <?php include('../Productos/footer.php'); ?>
 </body>

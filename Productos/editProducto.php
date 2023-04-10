@@ -110,6 +110,8 @@
         </form>
     </div>
     <br>
+<!-- Footer -->
+<?php include('../Productos/footer.php'); ?>
 
     <script type="text/javascript">
         function verIndex() {

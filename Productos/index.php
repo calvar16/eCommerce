@@ -76,8 +76,11 @@
             
     </div>
     <br>
+<<<<<<< HEAD
 
     <br>
+=======
+>>>>>>> main
      <!-- Footer -->
      <?php include('../Productos/footer.php'); ?>
 </body>

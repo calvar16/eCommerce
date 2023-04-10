@@ -10,7 +10,7 @@
     if (isset($_POST) && !empty($_POST)){
         $producto = new Producto();
 
-        if ($_FILES['image']['name'] !== ''){
+        if ($_FILES['image']['name'] !== '' || $_FILES['image']['name'] !== null){
             $_POST['image'] = saveImage($_FILES);
         }
 
@@ -59,12 +59,12 @@
             <br>
             <div class="row mb-2">
                 <div class="col">
-                <textarea class="form-control" name="descripcion" text="text" placeholder="Descripción del Producto" id="descripcion" value=<?= $data->descripcion ?>></textarea>
+                <textarea class="form-control" name="descripcion" text="text" placeholder="Descripción del Producto" id="descripcion"><?= $data->descripcion ?></textarea>
                 </div>
                 <div class="col">                
                    <div class="form-group">
                         <label for="seccionesLista">Sección</label>
-                        <select class="form-select" id="seccionesLista" onchange="verIndex();">  
+                        <select class="form-select" name="idSeleccion" id="idSeleccion" onchange="verIndex();">  
                         <?php
                             while ($s = mysqli_fetch_object($allSecciones)){
                                 echo "<option value=\"$s->idSeccion\">$s->seccionNombre</option>";
@@ -72,7 +72,7 @@
                         ?>
                         </select>          
                     </div>
-                   <input type="hidden" name="idSeleccion" id="idSeleccion">
+                    
                 </div>
             </div>
             <br>
@@ -110,6 +110,7 @@
         </form>
     </div>
     <br>
+<<<<<<< HEAD
      <!-- Footer --> 
     <footer class="footer">
         <div class="container">
@@ -118,6 +119,9 @@
             </div>
         </div>   
     </footer>
+=======
+    
+>>>>>>> main
 
     <script type="text/javascript">
         function verIndex() {
@@ -127,8 +131,11 @@
  /*            alert("Elegiste la opción con índice: " + opcion + " la cual contiene el valor: " + lista.options[opcion].firstChild.data); */        
         }
     </script>
+<<<<<<< HEAD
 
     <!-- Se enlaza con javascript de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+=======
+>>>>>>> main
 </body>
 </html>

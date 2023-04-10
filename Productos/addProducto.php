@@ -113,6 +113,7 @@
             
         </form>
     </div>
+    <br>
 <!-- Footer -->
 <?php include('../Productos/footer.php'); ?>
 

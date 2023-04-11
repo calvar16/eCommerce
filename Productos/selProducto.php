@@ -36,7 +36,7 @@
         <div class="row">
             <?php
                 while ($p = mysqli_fetch_object($allProductos)){
-                    echo "<div class='col col-lg-3 col-md-4 col-sm-12'>";
+                    echo "<div class='col col-md-4 col-sm-12'>";
                     echo "   <div class='card'>";
                     echo "        <img src='../imagenesProductos/" . $p->path_foto . "' class='card-img-top' alt='...'>";
                     echo "        <div class='card-body'>";
@@ -44,20 +44,17 @@
                     echo "         <p class='card-text'>"  . $p->descripcion .  "</p>";
                     echo "         <p class='card-text'>Precio: "  . number_format($p->precio,2) .  "</p>";
                     echo "         <p class='card-text'>Stock: "  . number_format($p->stock,2) .  "</p>";
-                    echo " <div class='text-center' ><a class='btn btn-success ' href='" . "editProducto.php?codigo=$p->codigo' > Modificar </a> - <a class='btn btn-danger ' href='" . "deleteProducto.php?codigo=$p->codigo' > Eliminar </a> </div>";
+                    echo " <div class='text-center'style='margin-top: 5%;' ><a class='btn btn-success ' href='" . "editProducto.php?codigo=$p->codigo' > Modificar </a>
+                         - <a class='btn btn-danger ' href='" . "deleteProducto.php?codigo=$p->codigo' > Eliminar </a> </div>";
                     echo " </div> ";  
                     echo "</div>";
                     echo "     </div>";
                 }
             ?>
-        </div>
-        <br>
-
-            
+        </div>            
     </div>
     <br>
 <!-- Footer -->
 <?php include('../Productos/footer.php'); ?>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

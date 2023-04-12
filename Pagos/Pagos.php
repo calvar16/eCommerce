@@ -44,7 +44,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="tipo">Tipo de tarjeta</label>
-                                <select class="form-control" id="tipo" required>
+                                <select class="form-select" id="tipo" required>
                                     <option value="" disabled selected>
                                         Seleccione el tipo de tarjeta
                                     </option>

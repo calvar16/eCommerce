@@ -58,7 +58,7 @@
                             echo "         <p class='card-text'>"  . $p->descripcion .  "</p>";
                             echo "         <p class='card-text'>Precio: "  . number_format($p->precio,2) .  "</p>";
                             echo "         <p class='card-text'>Stock: "  . number_format($p->stock,2) .  "</p>";
-                            echo "         <a href='#' class='btn btn-primary'>Agregar al carro de compras</a>";
+                            echo "         <a href='#' class='btn btn-primary' style='margin-top: 3%;'>Agregar al carro de compras</a>";
                             echo "         </div>";
                             echo "     </div>";
                             echo " </div>";

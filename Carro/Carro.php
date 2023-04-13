@@ -22,7 +22,7 @@
         <div class="container-title">
             <div>
                 <div class="title">
-                <h2>Registro Usuarios</h2>
+                <h2>Carro de Compras</h2>
                 </div>
                 <div class="container">
                 <div class="w-33">
